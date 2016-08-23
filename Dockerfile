@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-RUN apt-get update && apt-get install -y libhdf5-dev swig python3-wheel python3-pip python3-dev g++ libopenblas-dev libblas-dev liblapack-dev libatlas-base-dev gfortran
+RUN apt-get update && apt-get install -y git libhdf5-dev swig python3-wheel python3-pip python3-dev g++ libopenblas-dev libblas-dev liblapack-dev libatlas-base-dev gfortran
 
 # ML Pipeline packages
 RUN pip3 install --upgrade pip
